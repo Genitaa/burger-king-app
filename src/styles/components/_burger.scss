@@ -44,17 +44,23 @@ body {
             @include max-responsive( 575px ) {
                 width: 30%;
             }
+            @include max-responsive( 767px ) {
+                margin-top: 16px;
+            }
             @include min-max-responsive( 576px, 767px ) {
                 width: 40%;
             }
         }
     }
     &__description {
-        margin-bottom: 0;
+        @include min-responsive( 768px ) {
+            margin-bottom: 0;
+        }
         @include max-responsive( 767px ) {
             text-align: center;
         }
         &--red {
+            margin-bottom: 0;
             color: $red-color;
         }
     }
@@ -78,17 +84,26 @@ body {
         }
     }
     &__details {
-        margin-bottom: 4px;
+        @include max-responsive( 767px ) {
+            width: fit-content;
+            margin: auto auto 12px auto;
+        }
+        &__p {
+            margin-bottom: 4px;
+        }
     }
     &__btns {
         text-align: center;
+        @include max-responsive( 767px ) {
+            margin-bottom: 16px;
+        }
         &__visit span {
             font-weight: 600;
             color: $green-color;
             background-color: transparent;
         }
         &__order {
-            padding: 8px 16px;
+            padding: 8px 16px !important;
             background-color: $red-color !important;
             span {
                 color: $white-color;

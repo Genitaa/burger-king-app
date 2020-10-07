@@ -36,10 +36,12 @@ function Burger() {
                         <h6 className="order__description order__description--red">Get 3 Burgers</h6>
                         <p className="order__description">Onions Free</p>
                     </div>
-                    <div className="offset-3 col-6 col-sm-4 offset-md-0 col-md-3">
-                        <p className="order__details"><FontAwesomeIcon icon={faCheck} style={{color: "#00889e", marginRight: "10px"}} />Chicken Burger</p>
-                        <p className="order__details"><FontAwesomeIcon icon={faCheck} style={{color: "#00889e", marginRight: "10px"}} />Wrapper Burger</p>
-                        <p className="order__details"><FontAwesomeIcon icon={faCheck} style={{color: "#00889e", marginRight: "10px"}} />French Fries</p>
+                    <div className="col-md-3">
+                        <div className="order__details">
+                            <p className="order__details__p"><FontAwesomeIcon icon={faCheck} style={{color: "#00889e", marginRight: "10px"}} />Chicken Burger</p>
+                            <p className="order__details__p"><FontAwesomeIcon icon={faCheck} style={{color: "#00889e", marginRight: "10px"}} />Wrapper Burger</p>
+                            <p className="order__details__p"><FontAwesomeIcon icon={faCheck} style={{color: "#00889e", marginRight: "10px"}} />French Fries</p>
+                        </div>
                     </div>
                     <div className="offset-1 col-9 offset-md-0 col-md-3">
                         <div className="order__btns">
