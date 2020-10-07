@@ -18,6 +18,20 @@ body {
             color: $white-color;
         }
     }
+    &__banter {
+        position: relative;
+        &__details {
+            text-align: center;
+            font-weight: 600;
+            background-color: $ribbon-color;
+            padding: 5px 12px;
+            border-radius: 10px 0;
+            margin-bottom: 0;
+            position: absolute;
+            top: -13px;
+            left: -60px;
+        }
+    }
     &__logo {
         display: table-cell;
         vertical-align: middle;
@@ -50,19 +64,22 @@ body {
     &__details {
         margin-bottom: 4px;
     }
-    &__btns__visit span {
-        font-weight: 600;
-        color: $green-color;
-        background-color: transparent;
-    }
-    &__btns__order {
-        padding: 8px 16px;
-        background-color: $red-color !important;
-        span {
-            color: $white-color;
-        }
-        &--bold {
+    &__btns {
+        text-align: center;
+        &__visit span {
             font-weight: 600;
+            color: $green-color;
+            background-color: transparent;
+        }
+        &__order {
+            padding: 8px 16px;
+            background-color: $red-color !important;
+            span {
+                color: $white-color;
+            }
+            &--bold {
+                font-weight: 600;
+            }
         }
     }
 }

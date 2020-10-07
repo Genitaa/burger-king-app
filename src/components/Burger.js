@@ -17,6 +17,9 @@ function Burger() {
                                 </div>
                             </div>
                             <div className="col-md-5">
+                                <div className="order__banter">
+                                    <p className="order__banter__details">Super Offer</p>
+                                </div>
                                 <div className="order__logo">
                                     <img src={logo} alt="Burger King Logo" className="order__logo__img" />
                                     <p>Burger King</p>
