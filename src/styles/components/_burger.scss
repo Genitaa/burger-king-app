@@ -10,7 +10,9 @@ body {
     border-radius: 15px;
     margin: 16px;
     &__number {
-        width: 50%;
+        @include min-responsive( 575px ) {
+            width: 50%;
+        }
         text-align: center;
         color: $white-color;
         background-color: $green-color;
@@ -23,14 +25,33 @@ body {
         position: relative;
         &__details {
             text-align: center;
-            font-weight: 600;
+            font-weight: 700;
             background-color: $ribbon-color;
-            padding: 5px 12px;
+            padding: 4px 11px;
             border-radius: 10px 0;
             margin-bottom: 0;
             position: absolute;
             top: -13px;
-            left: -60px;
+            left: -48px;
+            @include max-responsive( 575px ) {
+                font-size: 13px;
+                max-width: 65%;
+                left: -23px;
+                padding: 5px 11px;
+            }
+            @include min-max-responsive( 576px, 767px ) {
+                font-size: 15px;
+                max-width: 45%;
+                left: -54px;
+                padding: 3px 10px;
+            }
+            @include min-max-responsive( 768px, 991px ) {
+                font-size: 12px;
+                width: 82px;
+                top: -10px;
+                left: -40px;
+                padding: 5px 8px;
+            }
         }
     }
     &__logo {
@@ -97,14 +118,24 @@ body {
         @include max-responsive( 767px ) {
             margin-bottom: 16px;
         }
-        &__visit span {
-            font-weight: 600;
-            color: $green-color;
-            background-color: transparent;
+        &__visit {
+            &--spacing {
+                @include max-responsive( 767px ) {
+                    margin-right: 24px;
+                }
+            }
+            span {
+                font-weight: 600;
+                color: $green-color;
+                background-color: transparent;
+            }
         }
         &__order {
             padding: 8px 16px !important;
             background-color: $red-color !important;
+            @include max-responsive( 767px ) {
+                padding: 10px 40px !important;
+            }
             span {
                 color: $white-color;
             }
