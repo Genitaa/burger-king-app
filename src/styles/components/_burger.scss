@@ -6,7 +6,7 @@ body {
     color: $text-color;
 }
 
-.order {
+.product {
     background-color: $card-background-color;
     border-radius: 15px;
     margin: 16px;
@@ -22,128 +22,134 @@ body {
             color: $white-color;
         }
     }
-    &__banter {
-        position: relative;
-        &__details {
-            text-align: center;
-            font-weight: 700;
-            color: $black-color;
-            background-color: $ribbon-color;
-            padding: 4px 11px;
-            border-radius: 10px 0;
-            margin-bottom: 0;
-            position: absolute;
-            top: -13px;
-            left: -48px;
-            @include max-responsive( 575px ) {
-                font-size: 13px;
-                max-width: 65%;
-                left: -23px;
-                padding: 5px 11px;
-            }
-            @include min-max-responsive( 576px, 767px ) {
-                font-size: 15px;
-                max-width: 45%;
-                left: -54px;
-                padding: 3px 10px;
-            }
-            @include min-max-responsive( 768px, 991px ) {
-                font-size: 12px;
-                width: 82px;
-                left: -40px;
-                padding: 5px 8px;
-            }
-        }
-    }
-    &__logo {
-        display: table-cell;
-        vertical-align: middle;
+}
+
+.banner {
+    position: relative;
+    &__details {
         text-align: center;
-        &__img {
-            width: 75%;
-            max-width: 100%;
-            height: auto;
-            @include max-responsive( 575px ) {
-                width: 30%;
-            }
-            @include max-responsive( 767px ) {
-                margin-top: 16px;
-            }
-            @include min-max-responsive( 576px, 767px ) {
-                width: 40%;
-            }
-        }
-    }
-    &__description {
-        @include min-responsive( 768px ) {
-            margin-bottom: 0;
-        }
-        @include max-responsive( 767px ) {
-            text-align: center;
-        }
-        &--red {
-            margin-bottom: 0;
-            color: $red-color;
-        }
-    }
-    &__box {
+        font-weight: 700;
+        color: $black-color;
+        background-color: $ribbon-color;
+        padding: 4px 11px;
+        border-radius: 10px 0;
+        margin-bottom: 0;
+        position: absolute;
+        top: -13px;
+        left: -48px;
         @include max-responsive( 575px ) {
-            width: 75%;
+            font-size: 13px;
+            max-width: 65%;
+            left: -23px;
+            padding: 5px 11px;
         }
         @include min-max-responsive( 576px, 767px ) {
-            width: 50%;
+            font-size: 15px;
+            max-width: 45%;
+            left: -54px;
+            padding: 3px 10px;
         }
-        &--border {
-            border: 1px solid $background-color;
-            border-radius: .25rem;
-        }
-        &__number {
-            font-weight: 600;
-            text-align: center;
-            padding: 8px 0;
-            margin: auto 0;
-            color: $black-color;
-            background-color: $background-color;
+        @include min-max-responsive( 768px, 991px ) {
+            font-size: 12px;
+            width: 82px;
+            left: -40px;
+            padding: 5px 8px;
         }
     }
-    &__details {
+}
+
+.logo {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    &__img {
+        width: 75%;
+        max-width: 100%;
+        height: auto;
+        @include max-responsive( 575px ) {
+            width: 30%;
+        }
         @include max-responsive( 767px ) {
-            width: fit-content;
-            margin: auto auto 12px auto;
+            margin-top: 16px;
         }
-        &__p {
-            margin-bottom: 4px;
+        @include min-max-responsive( 576px, 767px ) {
+            width: 40%;
         }
     }
-    &__btns {
+}
+
+.product__box {
+    @include max-responsive( 575px ) {
+        width: 75%;
+    }
+    @include min-max-responsive( 576px, 767px ) {
+        width: 50%;
+    }
+    &--border {
+        border: 1px solid $background-color;
+        border-radius: .25rem;
+    }
+    &__num {
+        font-weight: 600;
         text-align: center;
-        @include max-responsive( 767px ) {
-            margin-bottom: 16px;
-        }
-        &__visit {
-            &--spacing {
-                @include max-responsive( 767px ) {
-                    margin-right: 24px;
-                }
-            }
-            span {
-                font-weight: 600;
-                color: $green-color;
-                background-color: transparent;
-            }
-        }
-        &__order {
-            padding: 8px 16px !important;
-            background-color: $red-color !important;
+        padding: 8px 0;
+        margin: auto 0;
+        color: $black-color;
+        background-color: $background-color;
+    }
+}
+
+.product__description {
+    @include min-responsive( 768px ) {
+        margin-bottom: 0;
+    }
+    @include max-responsive( 767px ) {
+        text-align: center;
+    }
+    &--red {
+        margin-bottom: 0;
+        color: $red-color;
+    }
+}
+
+.product__details {
+    @include max-responsive( 767px ) {
+        width: fit-content;
+        margin: auto auto 12px auto;
+    }
+    &__p {
+        margin-bottom: 4px;
+    }
+}
+
+.btns {
+    text-align: center;
+    @include max-responsive( 767px ) {
+        margin-bottom: 16px;
+    }
+    &__visit {
+        &--spacing {
             @include max-responsive( 767px ) {
-                padding: 10px 40px !important;
+                margin-right: 24px;
             }
-            span {
-                color: $white-color;
-            }
-            &--bold {
-                font-weight: 600;
-            }
+        }
+        span {
+            font-weight: 600;
+            color: $green-color;
+            background-color: transparent;
+        }
+    }
+    &__order {
+        padding: 8px 16px !important;
+        background-color: $red-color !important;
+        @include max-responsive( 767px ) {
+            padding: 10px 40px !important;
+        }
+        span {
+            color: $white-color;
+        }
+        &--bold {
+            font-weight: 600;
         }
     }
 }
