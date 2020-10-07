@@ -1,9 +1,9 @@
 import React from 'react';
-import Product from './components/Product';
+import ProductList from './components/ProductList';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
-    return <Product />
+    return <ProductList />
 }
 
 export default App;

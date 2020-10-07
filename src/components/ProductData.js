@@ -2,7 +2,8 @@ const ProductData = [
     {
         id: 1,
         number: 1,
-        logo: "../images/BurgerKing-Logo.png",
+        banner: "Super Offer",
+        logo: "images/BurgerKing-Logo.png",
         description: "Burger King",
         quantity: 9,
         offer: "Get 3 Burgers",
@@ -12,17 +13,19 @@ const ProductData = [
     {
         id: 2,
         number: 2,
-        logo: "../images/McDonals-Logo.png",
+        banner: null,
+        logo: "images/McDonalds-Logo.png",
         description: "McDonalds",
         quantity: 10,
-        offer: "Get 3 Ice Creams",
-        offerDescription: "One Free",
+        offer: null,
+        offerDescription: null,
         details: ["Sundae", "McFlurry", "McDip"]
     },
     {
         id: 3,
         number: 3,
-        logo: "../images/McDonals-Logo.png",
+        banner: "Super Offer",
+        logo: "images/McDonalds-Logo.png",
         description: "McDonalds",
         quantity: 5,
         offer: "Get 3 Burritos",
@@ -32,7 +35,8 @@ const ProductData = [
     {
         id: 4,
         number: 4,
-        logo: "../images/KFC-Logo.png",
+        banner: "Super Offer",
+        logo: "images/KFC-Logo.png",
         description: "KFC",
         quantity: 7,
         offer: "Get 3 Buckets of Chicken",
@@ -42,7 +46,8 @@ const ProductData = [
     {
         id: 5,
         number: 5,
-        logo: "../images/InNOut-Logo.png",
+        banner: "Super Offer",
+        logo: "images/InNOut-Logo.png",
         description: "In-N-Out Burger",
         quantity: 3,
         offer: "Get 2 Cheeseburgers",
