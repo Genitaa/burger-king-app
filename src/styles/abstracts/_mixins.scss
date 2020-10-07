@@ -1,0 +1,24 @@
+// MEDIA QUERIES MIXINS
+@mixin max-responsive( $property ) {
+    @media ( max-width: $property ) {
+        @content;
+    }
+}
+
+@mixin min-responsive( $property ) {
+    @media ( min-width: $property ) {
+        @content;
+    }
+}
+
+@mixin min-max-responsive( $property1, $property2 ) {
+    @media ( min-width: $property1 ) and ( max-width: $property2 ) {
+        @content;
+    }
+}
+
+@mixin max-height( $property ) {
+    @media screen and ( max-height: $property ) {
+        @content;
+    }
+}
