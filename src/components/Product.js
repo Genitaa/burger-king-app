@@ -1,10 +1,10 @@
 import React from 'react';
 import { faCheck } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import '../styles/components/_burger.scss';
-import logo from '../images/logo.png';
+import '../styles/components/_product.scss';
+import logo from '../images/BurgerKing-Logo.png';
 
-function Burger() {
+function Product() {
     return (
         <div className="container-fluid">
             <main className="product">
@@ -55,4 +55,4 @@ function Burger() {
     )
 }
 
-export default Burger;
+export default Product;

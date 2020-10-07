@@ -1,9 +1,9 @@
 import React from 'react';
-import Burger from './components/Burger';
+import Product from './components/Product';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
-    return <Burger />
+    return <Product />
 }
 
 export default App;
