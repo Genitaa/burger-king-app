@@ -3,6 +3,7 @@
 
 body {
     background-color: $background-color;
+    color: $text-color;
 }
 
 .order {
@@ -26,6 +27,7 @@ body {
         &__details {
             text-align: center;
             font-weight: 700;
+            color: $black-color;
             background-color: $ribbon-color;
             padding: 4px 11px;
             border-radius: 10px 0;
@@ -48,7 +50,6 @@ body {
             @include min-max-responsive( 768px, 991px ) {
                 font-size: 12px;
                 width: 82px;
-                top: -10px;
                 left: -40px;
                 padding: 5px 8px;
             }
@@ -101,6 +102,7 @@ body {
             text-align: center;
             padding: 8px 0;
             margin: auto 0;
+            color: $black-color;
             background-color: $background-color;
         }
     }
