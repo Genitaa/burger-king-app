@@ -9,7 +9,6 @@ body {
 .product {
     background-color: $card-background-color;
     border-radius: 15px;
-    margin: 16px;
     &:not(:first-of-type) {
         margin-top: 22px;
     }
