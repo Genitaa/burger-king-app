@@ -20,7 +20,7 @@ https://github.com/Genitaa/burger-king-app
 	-  In the admin panel, go to CPT UI > Tools and paste the content from `cpt_ui_export.json` to import Custom Post Types 
 	-  In the admin panel, go to Custom Fields > Tools and choose `acf_export.json` to import Custom Fields
 	- In the admin panel, go to Tools > Import, select WordPress and choose `products_export.xml`  to import the pre-populated products
-3. Install NPM packages
+3. Install NPM packages. (Images will not be imported.)
 ```sh
 npm install
 ```
