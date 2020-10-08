@@ -10,7 +10,7 @@ function ProductList() {
 
     useEffect(() => {
         setLoading(true);
-        axios.get('http://localhost/burger-king-app/wp-json/wp/v2/products')
+        axios.get(`${process.env.REACT_APP_API_URL}/wp-json/wp/v2/products`)
             .then(res => {
                 const newProducts = res.data.map((e, i) => {
                     const product = {
@@ -41,7 +41,7 @@ function ProductList() {
                     <h1>Product list</h1>
                 </div>
             </div>
-            {loading ? <img src={spinner} className="product-list__spinner" /> : products}
+            {loading ? <img src={spinner} className="product-list__spinner" alt="Spinner" /> : products}
         </div>
     )
 }

@@ -19,7 +19,7 @@ function Product({ product }) {
                                 <p className="banner__details">{product.banner}</p>
                             </div>
                             <div className="logo">
-                                <img src={product.logo} className="logo__img" />
+                                <img src={product.logo} className="logo__img" alt="Logo" />
                                 <p>{product.description}</p>
                             </div>
                         </div>
