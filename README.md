@@ -9,13 +9,17 @@ To run this project, you need to have a WordPress website set up with wp-json en
 * Advanced Custom Fields Pro
 * ACF To REST API
 
+
 ### Installation
 
 1. Clone the repo
 ```sh
 https://github.com/Genitaa/burger-king-app
 ```
-2. Import `cpt_ui_export.json` and `acf_export.json` located inside the `exports` folder to WordPress, to get the required custom posts and fields.
+2. Import the following files into WordPress to get the required custom posts and fields.
+	-  In the admin panel, go to CPT UI > Tools and paste the content from `cpt_ui_export.json` to import Custom Post Types 
+	-  In the admin panel, go to Custom Fields > Tools and choose `acf_export.json` to import Custom Fields
+	- In the admin panel, go to Tools > Import, select WordPress and choose `products_export.xml`  to import the pre-populated products
 3. Install NPM packages
 ```sh
 npm install
