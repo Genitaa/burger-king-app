@@ -6,7 +6,7 @@ function ProductList() {
     const mainProducts = products.map(product => <Product key={product.id} product={product} />);
 
     return (
-        <div>
+        <div className="container-fluid">
             {mainProducts}
         </div>
     )

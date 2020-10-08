@@ -13,18 +13,18 @@ const ProductData = [
     {
         id: 2,
         number: 2,
-        banner: null,
+        banner: "Week Offer",
         logo: "images/McDonalds-Logo.png",
         description: "McDonalds",
         quantity: 10,
-        offer: null,
-        offerDescription: null,
+        offer: "Get 2 Ice Creams",
+        offerDescription: "One Free",
         details: ["Sundae", "McFlurry", "McDip"]
     },
     {
         id: 3,
         number: 3,
-        banner: "Super Offer",
+        banner: "Weekend Offer",
         logo: "images/McDonalds-Logo.png",
         description: "McDonalds",
         quantity: 5,
@@ -35,7 +35,7 @@ const ProductData = [
     {
         id: 4,
         number: 4,
-        banner: "Super Offer",
+        banner: "Christmas Offer",
         logo: "images/KFC-Logo.png",
         description: "KFC",
         quantity: 7,
@@ -46,7 +46,7 @@ const ProductData = [
     {
         id: 5,
         number: 5,
-        banner: "Super Offer",
+        banner: "Today Offer",
         logo: "images/InNOut-Logo.png",
         description: "In-N-Out Burger",
         quantity: 3,
